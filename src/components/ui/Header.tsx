@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { shadow } from './utils'
 import { Button } from './button';
+import DarkModeToogle from './DarkModeToogle'
 
 const Header = () => {
     const user=null;
@@ -35,6 +36,7 @@ const Header = () => {
                     </>
                 )
             }
+            <DarkModeToogle/>
         </div>
     </header>
   )
