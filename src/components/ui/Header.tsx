@@ -3,9 +3,11 @@ import Image from 'next/image'
 import { shadow } from './utils'
 import { Button } from './button';
 import DarkModeToogle from './DarkModeToogle'
+import LogoutButton from '../LogoutButton';
 
 const Header = () => {
-    const user=null;
+    const user=1;
+
   return (
     <header className='relative flex h-24 w-full items-center justify-between bg-popover px-3 sm:px-8'
     style={
@@ -24,7 +26,7 @@ const Header = () => {
             {
                 user ? (
                     // <Button onClick={() => {}}>LogOut</Button>
-                    "logout"
+                    <LogoutButton/>
                 ) : (
                     <>
                         <Button asChild variant="outline">
