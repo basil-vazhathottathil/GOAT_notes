@@ -1,9 +1,9 @@
 import React from 'react'
 
-function HOme() {
+function Homepage() {
   return (
-    <div>HOme</div>
+    <div className='bg-blue-400'>home</div>
   )
 }
 
-export default HOme
+export default Homepage
